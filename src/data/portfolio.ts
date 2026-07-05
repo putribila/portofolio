@@ -1,15 +1,16 @@
 import gizimeal from "@/assets/project-gizimeal.jpg";
 import guava from "@/assets/project-guava.jpg";
 import dashboard from "@/assets/project-dashboard.jpg";
+import { title } from "process";
 
 // [GANTI BAGIAN INI] — Update links, university, certifications, etc.
 export const profile = {
-  name: "Putri Nabila",
-  role: "Informatics Student | AI Engineer Enthusiast",
-  email: "putri.nabila@example.com", // [GANTI BAGIAN INI]
-  github: "https://github.com/your-username", // [GANTI BAGIAN INI]
-  linkedin: "https://linkedin.com/in/your-profile", // [GANTI BAGIAN INI]
-  cv: "#", // [GANTI BAGIAN INI] link CV
+  name: "Putri Nabilla",
+  role: "Fresh Graduate | Informatics Engineering",
+  email: "putrinabilaaa7@gmail.com",
+  github: "https://github.com/putribila",
+  linkedin: "https://www.linkedin.com/in/putri-nabilla-77a670223", // [GANTI BAGIAN INI]
+  cv: "https://drive.google.com/file/d/1BO-dvcW6z2pxgKOqESQbu0PdaRXetber/view?usp=sharing", // [GANTI BAGIAN INI] link CV
   location: "Indonesia",
 };
 
@@ -24,15 +25,14 @@ export const typingPhrases = [
   "AI Engineering",
   "Machine Learning",
   "Computer Vision",
-  "Web Development",
 ];
 
-export const stats = [
-  { value: "3+", label: "Projects Completed" },
-  { value: "15", label: "Image Classes Processed" },
-  { value: "AI + Web", label: "Integration Experience" },
-  { value: "Team", label: "Collaboration Experience" },
-];
+//export const stats = [
+//  { value: "3+", label: "Projects Completed" },
+//  { value: "15", label: "Image Classes Processed" },
+//  { value: "AI + Web", label: "Integration Experience" },
+//  { value: "Team", label: "Collaboration Experience" },
+//];
 
 export const skillGroups = [
   {
@@ -144,51 +144,99 @@ export const projects = [
 
 export const experiences = [
   {
-    title: "AI Engineer — GiziMeal Capstone Project",
-    year: "2026",
-    description:
-      "Berkontribusi sebagai AI Engineer dalam pengembangan platform GiziMeal: preprocessing dataset, pembuatan pipeline data, pengembangan model deep learning, evaluasi performa model, integrasi API, serta deployment sistem untuk frontend aplikasi.",
+    title: "AI Engineer Cohort - Coding Camp powered by DBS Foundation",
+    year: "Februari 2026 - Present",
+    description: [
+      "Membuat proyek untuk membangun model machine learning menggunakan beberapa metode supervised dan unsupervised learning pada kasus nyata dengan penerapan EDA, pra-pemrosesan data, clustering.",
+      "Pembuatan proyek model deep learning yang dapat melakukan klasifikasi gambar dan analisis sentiment dengan data hasil scraping mandiri.",
+      "Membuat proyek time series multivariate multi-step menggunakan model dan training yang dikustomisasi.",
+      "Mengembangkan keterampilan profesional meliputi critical thinking, problem solving, project management, time management, adaptability, resilience, professional branding, serta komunikasi wawancara",
+      "Membuat proyek akhir tim berupa solusi berbasis artificial intelligence seputar rekomendasi menu makanan dengan gizi seimbang."
+    ],
   },
   {
-    title: "AI Model Development & Evaluation",
-    year: "2026",
-    description:
-      "Pengembangan dan evaluasi model klasifikasi citra menggunakan TensorFlow dan Keras: augmentasi, normalisasi, balancing dataset, analisis overfitting, optimasi hyperparameter, serta evaluasi accuracy, loss, macro-F1 score, dan confusion matrix.",
+    title: "Machine Learning Cohort - MSIB Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
+    year: "September 2024 - Januari 2025",
+    description: [
+      "Melaksanakan alur pengembangan proyek Machine Learning secara end-to-end, mulai dari analisis data, pengembangan model, evaluasi, hingga deployment model berbasis web.",
+      "Mengolah dan menganalisis data untuk menghasilkan insight yang mendukung penyelesaian permasalahan bisnis dengan membuat dashboard streamlit.",
+      "Mengembangkan keterampilan profesional meliputi critical thinking, problem solving, project management, time management, adaptability, resilience, professional branding, serta komunikasi wawancara.",
+      "Mengembangkan proyek akhir berupa solusi berbasis Machine Learning yaitu deteksi sampah."
+    ],
   },
   {
-    title: "API Development & Deployment",
-    year: "2026",
-    description:
-      "Mengembangkan RESTful API berbasis FastAPI untuk inferensi model — menerima unggahan gambar, melakukan preprocessing, menghasilkan prediksi, serta mengirimkan hasil klasifikasi dan informasi nutrisi ke aplikasi frontend.",
+    title: "Data Analyst - SMKDEV Bootcamp Scholarship",
+    year: "5 Februari - 9 Maret 2024",
+    description: [
+      "Mempelajari dan mempraktikkan konsep statistika, analisis data dasar, serta pengolahan data menggunakan spreadsheet.",
+      "Mengerjakan proyek analisis data berbasis studi kasus dengan menerapkan manipulasi data, visualisasi data, dan EDA menggunakan Python.",
+      "Membuat capstone project berupa dashboard interaktif menggunakan Google Data Studio untuk menyajikan insight secara lebih informatif."
+    ],
+  },
+  {
+    title: "Bootcamp Microsoft Excel - KarirNex ",
+    year: "27 November - 8 Desember 2023",
+    description: [
+      "Mempelajari dan mempraktikkan pengelolaan data menggunakan spreadsheet, mulai dari mengatur worksheets, workbooks, data cells, ranges, tabel, table data, hingga chart.",
+      "Mengoperasikan berbagai formula dan fungsi seperti AVERAGE, MAX, SUM, COUNT, COUNTA, COUNTBLANK, IF, dan fungsi lainnya untuk membantu proses analisis serta pengolahan data secara lebih efisien."
+    ],
+  },
+  {
+    title: "Junior Web Developer Training and Certification - VSGA Digital Talent Scholarship Kominfo",
+    year: "13 Juni - 28 Juli 2023",
+    description: [
+      "Mempelajari dan mengimplementasikan User Interface serta konsep pemrograman terstruktur dalam pengembangan aplikasi berbasis web.",
+      "Menerapkan perintah eksekusi bahasa pemrograman berbasis teks, grafik, dan multimedia dengan penyusunan fungsi, file, library, serta komponen secara rapi dan terorganisir.",
+      "Membuat website berita yang menerapkan konsep antarmuka, struktur kode, dan pengelolaan sumber daya pemrograman sebagai proyek akhir."
+    ],
+  },
+  {
+    title: "Data Management Staff Training and Certification - VSGA Digital Talent Scholarship Kominfo",
+    year: "20 - 24 Juni 2022",
+    description: [
+      "Melakukan pemasukan data serta memahami aspek keamanan informasi pengguna dalam penggunaan teknologi.",
+      "Mengoperasikan perangkat komputer, sistem operasi, peripheral, surat elektronik (e-mail client), pengolah kata tingkat lanjut, dan perangkat lunak lembar kerja tingkat lanjut untuk mendukung pekerjaan administrasi dan pengolahan data."
+    ]
+  }
+];
+
+export const education = [
+  {
+    university: "STMIK IKMI CIREBON",
+    degree: "S1 - Teknik Informatika",
+    period: "2022 - 2026",
+  },
+  {
+    university: "SMA NEGERI 2 KOTA CIREBON",
+    degree: "MIPA",
+    period: "2019 - 2021",
   },
 ];
 
-export const education = {
-  degree: "Bachelor of Informatics Engineering",
-  university: "[Isi Nama Universitas]", // [GANTI BAGIAN INI]
-  period: "[Isi Tahun Masuk] – Present", // [GANTI BAGIAN INI]
-  description:
-    "Mempelajari dasar pemrograman, pengembangan perangkat lunak, basis data, data science, machine learning, deep learning, computer vision, serta pengembangan aplikasi berbasis web.",
-};
-
 export const certifications = [
   {
-    name: "[Nama Sertifikasi 1]", // [GANTI BAGIAN INI]
-    issuer: "[Nama Penyelenggara]",
-    year: "[Tahun]",
-    href: "#",
+    name: "MSIB Machine Learning Cohort",
+    issuer: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
+    year: "September 2024 - Januari 2025",
+    href: "https://drive.google.com/file/d/1H8bAmQII56ClxdtITbwsIvTXVyEYfsfe/view?usp=sharing",
   },
   {
-    name: "[Nama Sertifikasi 2]", // [GANTI BAGIAN INI]
-    issuer: "[Nama Penyelenggara]",
-    year: "[Tahun]",
-    href: "#",
+    name: "Digital Talent Academy Associate Data Scientist + Python",
+    issuer: "Kementerian Komunikasi dan Informatika Republik Indonesia",
+    year: "Juni 2026",
+    href: "https://drive.google.com/file/d/1tNOP47MCnpJb5aB2OWzXE3NWQFdoGRGZ/view?usp=drive_link",
   },
   {
-    name: "[Nama Sertifikasi 3]", // [GANTI BAGIAN INI]
-    issuer: "[Nama Penyelenggara]",
-    year: "[Tahun]",
-    href: "#",
+    name: "Programming and Software Development",
+    issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
+    year: "Oktober 2023",
+    href: "https://drive.google.com/file/d/1mvG6aWsM9PA3jKjpL6XrnPjbJuzWjDri/view?usp=drive_link",
+  },
+  {
+    name: "Data Management Staff",
+    issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
+    year: "Juni 2022",
+    href: "https://drive.google.com/file/d/1q6tx5lI1Q-nBcH_occ4V-t47Vnu6d1io/view?usp=drive_link",
   },
 ];
 

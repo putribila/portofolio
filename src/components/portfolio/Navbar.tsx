@@ -32,15 +32,14 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled
           ? "border-b border-border bg-background/80 backdrop-blur-md"
           : "border-b border-transparent"
-      }`}
+        }`}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
         <a href="#home" className="text-lg font-extrabold tracking-tight">
-          Putri<span className="text-primary">.</span>Nabila
+          Putri<span className="text-primary">.</span>Nabilla
         </a>
 
         <ul className="hidden items-center gap-7 lg:flex">
@@ -81,9 +80,8 @@ export function Navbar() {
       </nav>
 
       <div
-        className={`overflow-hidden border-border bg-background/95 backdrop-blur-md transition-all duration-300 lg:hidden ${
-          open ? "max-h-96 border-b" : "max-h-0"
-        }`}
+        className={`overflow-hidden border-border bg-background/95 backdrop-blur-md transition-all duration-300 lg:hidden ${open ? "max-h-96 border-b" : "max-h-0"
+          }`}
       >
         <ul className="flex flex-col gap-1 px-5 py-3">
           {navLinks.map((l) => (

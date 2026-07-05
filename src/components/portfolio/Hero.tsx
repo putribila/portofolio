@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { Github, Linkedin, Mail, ArrowRight } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
+import profileImg from "@/assets/profil-porto.jpeg";
 import { profile, heroBadges, typingPhrases } from "@/data/portfolio";
 
 function useTyping(words: string[]) {
@@ -48,7 +48,7 @@ export function Hero() {
             <span className="h-2 w-2 rounded-full bg-primary" /> Open to opportunities
           </span>
           <h1 className="mt-5 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
-            Hello, I'm <span className="text-primary">Putri Nabila</span>
+            Hello, I'm <span className="text-primary">Putri Nabilla</span>
           </h1>
           <p className="mt-3 text-lg font-semibold text-muted-foreground">
             {profile.role}
@@ -62,11 +62,11 @@ export function Hero() {
           </p>
 
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-muted-foreground">
-            Mahasiswa Teknik Informatika yang tertarik pada pengembangan teknologi
+            Lulusan S1 Teknik Informatika yang tertarik pada pengembangan teknologi
             berbasis Artificial Intelligence, Machine Learning, Deep Learning, dan
-            Computer Vision. Berpengalaman membangun model klasifikasi citra,
-            mengembangkan RESTful API, serta mengintegrasikan solusi AI ke dalam
-            aplikasi berbasis web.
+            Computer Vision. Berpengalaman membangun model klasifikasi citra, mengolah dataset, melakukan eksplorasi data,
+            mengevaluasi performa model, serta membuat dashboard menggunakan streamlit.
+
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-3">

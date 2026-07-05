@@ -21,7 +21,7 @@ export function Section({
     >
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal>
-          <div className="mb-12 max-w-2xl">
+          <div className="mb-8 max-w-2xl">
             {eyebrow && (
               <span className="text-sm font-semibold uppercase tracking-widest text-primary">
                 {eyebrow}
