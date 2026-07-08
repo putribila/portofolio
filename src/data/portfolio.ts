@@ -1,6 +1,6 @@
 import gizimeal from "@/assets/webgizimeal.png";
 import guava from "@/assets/jambu.jpeg";
-import dashboard from "@/assets/project1.png";
+import dashboard from "@/assets/project-dashboard.jpg";
 import dashboardZara from "@/assets/dashboard-zara.jpg";
 import { title } from "process";
 
@@ -109,7 +109,7 @@ export const projects = [
   },
   {
     image: gizimeal,
-    title: "GiziMeal — Capstone Project",
+    title: "GiziMeal — Project Tim",
     description:
       "Platform berbasis website yang memanfaatkan kecerdasan buatan (AI) dan Computer Vision untuk mengidentifikasi bahan makanan dari gambar serta merekomendasikan resep sehat. website ini dilengkapi dengan fitur deteksi bahan makanan otomatis, rekomendasi menu, penyajian informasi nilai gizi, hingga edukasi gizi berbasis Chatbot AI.",
     role: "AI Engineer & Web Developer",
