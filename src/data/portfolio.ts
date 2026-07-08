@@ -1,6 +1,7 @@
-import gizimeal from "@/assets/project-gizimeal.jpg";
-import guava from "@/assets/project-guava.jpg";
-import dashboard from "@/assets/project-dashboard.jpg";
+import gizimeal from "@/assets/webgizimeal.png";
+import guava from "@/assets/jambu.jpeg";
+import dashboard from "@/assets/project1.png";
+import dashboardZara from "@/assets/dashboard-zara.jpg";
 import { title } from "process";
 
 // [GANTI BAGIAN INI] — Update links, university, certifications, etc.
@@ -87,25 +88,45 @@ export const skillGroups = [
 
 export const projects = [
   {
-    image: gizimeal,
-    title: "GiziMeal — Smart Nutrition Recommendation Platform",
+    image: dashboardZara,
+    title: "ZARA Sales Performance Dashboard",
     description:
-      "Platform berbasis web yang mengenali bahan makanan mentah melalui unggahan gambar, menampilkan hasil klasifikasi, memperkirakan kandungan energi, serta memberikan rekomendasi menu makanan dengan informasi gizi yang relevan.",
-    role: "AI Engineer",
+      "Dashboard interaktif untuk menganalisis pola pembelian pelanggan dan performa penjualan produk ZARA dengan mengidentifikasi pola penjualan, performa produk, dan faktor-faktor yang memengaruhi revenue serta menyajikan insight bisnis melalui visualisasi data.",
+    role: "Data Analyst",
+    tech: [
+      "Python",
+      "Google Colab",
+      "Google Data Studio",
+      "Pandas",
+      "Matplotlip",
+      "Kaggle",
+
+    ],
+    links: [
+      { label: "Dashboard", href: "https://datastudio.google.com/reporting/e77ffbee-3848-4ce1-9573-7fe47da3f07b" }, // [GANTI BAGIAN INI]
+      { label: "GitHub Repository", href: "https://github.com/putribila/Analisis-Data-Penjualan-Zara" }, // [GANTI BAGIAN INI]
+    ],
+  },
+  {
+    image: gizimeal,
+    title: "GiziMeal — Capstone Project",
+    description:
+      "Platform berbasis website yang memanfaatkan kecerdasan buatan (AI) dan Computer Vision untuk mengidentifikasi bahan makanan dari gambar serta merekomendasikan resep sehat. website ini dilengkapi dengan fitur deteksi bahan makanan otomatis, rekomendasi menu, penyajian informasi nilai gizi, hingga edukasi gizi berbasis Chatbot AI.",
+    role: "AI Engineer & Web Developer",
     tech: [
       "Python",
       "TensorFlow",
       "Keras",
-      "ResNet18",
+      "CNN ResNet18",
       "FastAPI",
-      "React",
-      "Vite",
+      "Gemini API",
       "Hugging Face",
       "Vercel",
     ],
     links: [
-      { label: "Live Demo", href: "#" }, // [GANTI BAGIAN INI]
-      { label: "GitHub Repository", href: "#" }, // [GANTI BAGIAN INI]
+      { label: "Website", href: "https://gizimeal.projectshowcase.web.id" },
+      { label: "Model", href: "https://huggingface.co/CC26-PSU393/gizimeal-model/tree/main" },
+      { label: "GitHub", href: "https://github.com/CC26-PSU393-GiziMeal/AI-Engineer" },
     ],
   },
   {
@@ -117,11 +138,12 @@ export const projects = [
     tech: [
       "Python",
       "TensorFlow",
-      "Keras",
+      "Google Colab",
       "MobileNetV2",
-      "ResNet50",
-      "Scikit-learn",
       "Matplotlib",
+      "Keras",
+      "Kaggle",
+      "Scikit-learn",
     ],
     links: [
       { label: "GitHub Repository", href: "#" }, // [GANTI BAGIAN INI]

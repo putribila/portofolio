@@ -1,132 +1,84 @@
-import { useState, type FormEvent } from "react";
-import { Mail, Linkedin, Github, MapPin, Send, Check } from "lucide-react";
+import { Mail, Linkedin, Github, ArrowRight } from "lucide-react";
 import { Section } from "./Section";
 import { Reveal } from "./Reveal";
 import { profile } from "@/data/portfolio";
 
 export function Contact() {
-  const [sent, setSent] = useState(false);
-
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 3500);
-  };
-
   const contactItems = [
-    { icon: Mail, label: profile.email, href: `mailto:${profile.email}` },
-    { icon: Linkedin, label: "LinkedIn", href: profile.linkedin },
-    { icon: Github, label: "GitHub", href: profile.github },
-    { icon: MapPin, label: profile.location, href: undefined },
+    {
+      icon: Mail,
+      title: "Email",
+      value: profile.email,
+      href: `mailto:${profile.email}`,
+    },
+    {
+      icon: Linkedin,
+      title: "LinkedIn",
+      value: "linkedin.com/in/putri-nabilla-77a670223",
+      href: profile.linkedin,
+    },
+    {
+      icon: Github,
+      title: "GitHub",
+      value: "github.com/putribila",
+      href: profile.github,
+    },
   ];
 
   return (
-    <Section id="contact" eyebrow="Get in touch" title="Let's Connect">
-      <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr]">
+    <Section id="contact">
+      <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] items-center">
         <Reveal>
-          <div>
-            <p className="text-[15px] leading-relaxed text-muted-foreground">
+          <div className="space-y-6">
+            <div>
+              <span className="text-sm font-semibold uppercase tracking-widest text-primary">
+                Get in touch
+              </span>
+              <h2 className="mt-2 text-4xl font-extrabold tracking-tight sm:text-5xl">
+                Let's Connect
+              </h2>
+            </div>
+            <p className="text-[16px] leading-relaxed text-muted-foreground">
               Saya terbuka untuk kesempatan kolaborasi, diskusi proyek, magang,
               maupun peluang pengembangan karier di bidang Artificial Intelligence,
               Machine Learning, Data Science, dan Software Development.
             </p>
-            <div className="mt-7 space-y-3">
-              {contactItems.map(({ icon: Icon, label, href }) => {
-                const inner = (
-                  <>
-                    <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-accent text-accent-foreground">
-                      <Icon size={18} />
-                    </span>
-                    <span className="min-w-0 truncate text-sm font-medium">{label}</span>
-                  </>
-                );
-                return href ? (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-3 rounded-xl border border-border bg-card p-3 transition-colors hover:border-primary"
-                  >
-                    {inner}
-                  </a>
-                ) : (
-                  <div
-                    key={label}
-                    className="flex items-center gap-3 rounded-xl border border-border bg-card p-3"
-                  >
-                    {inner}
-                  </div>
-                );
-              })}
-            </div>
           </div>
         </Reveal>
 
         <Reveal delay={0.1}>
-          <form
-            onSubmit={handleSubmit}
-            className="rounded-2xl border border-border bg-card p-6 shadow-sm"
-          >
-            <div className="grid gap-4 sm:grid-cols-2">
-              <Field label="Name" id="name" />
-              <Field label="Email" id="email" type="email" />
+          <div className="rounded-3xl border border-border bg-card p-6 sm:p-8 shadow-sm">
+            <div className="divide-y divide-border/60">
+              {contactItems.map(({ icon: Icon, title, value, href }) => (
+                <a
+                  key={title}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group flex items-center justify-between py-6 first:pt-0 last:pb-0 transition-colors"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-all group-hover:bg-primary group-hover:text-primary-foreground">
+                      <Icon size={20} />
+                    </div>
+                    <div>
+                      <h4 className="text-base font-semibold text-foreground">
+                        {title}
+                      </h4>
+                      <p className="text-sm text-muted-foreground">
+                        {value}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary transition-all group-hover:translate-x-1 group-hover:bg-primary group-hover:text-primary-foreground">
+                    <ArrowRight size={16} />
+                  </div>
+                </a>
+              ))}
             </div>
-            <div className="mt-4">
-              <Field label="Subject" id="subject" />
-            </div>
-            <div className="mt-4">
-              <label htmlFor="message" className="mb-1.5 block text-sm font-medium">
-                Message
-              </label>
-              <textarea
-                id="message"
-                required
-                rows={5}
-                className="w-full resize-none rounded-xl border border-input bg-background px-3.5 py-2.5 text-sm outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-ring/30"
-              />
-            </div>
-            <button
-              type="submit"
-              className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90"
-            >
-              {sent ? (
-                <>
-                  <Check size={16} /> Message Sent
-                </>
-              ) : (
-                <>
-                  <Send size={16} /> Send Message
-                </>
-              )}
-            </button>
-          </form>
+          </div>
         </Reveal>
       </div>
     </Section>
-  );
-}
-
-function Field({
-  label,
-  id,
-  type = "text",
-}: {
-  label: string;
-  id: string;
-  type?: string;
-}) {
-  return (
-    <div>
-      <label htmlFor={id} className="mb-1.5 block text-sm font-medium">
-        {label}
-      </label>
-      <input
-        id={id}
-        type={type}
-        required
-        className="w-full rounded-xl border border-input bg-background px-3.5 py-2.5 text-sm outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-ring/30"
-      />
-    </div>
   );
 }
