@@ -17,7 +17,7 @@ export function Projects() {
                   loading="lazy"
                   width={1200}
                   height={800}
-                  className="aspect-[3/2] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="aspect-[3/2] w-full object-fill transition-transform duration-500 group-hover:scale-105"
                 />
                 <span className="absolute left-3 top-3 rounded-full bg-background/90 px-2.5 py-1 text-xs font-semibold text-primary backdrop-blur">
                   {p.role}
