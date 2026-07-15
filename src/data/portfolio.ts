@@ -1,7 +1,9 @@
 import gizimeal from "@/assets/webgizimeal.png";
-import guava from "@/assets/jambu.jpeg";
+import guava from "@/assets/guava.png";
+import analisisSentimen from "@/assets/analisisSentimen.png";
 import dashboard from "@/assets/project-dashboard.jpg";
 import dashboardZara from "@/assets/dashboard-zara.jpg";
+import dashboardBike from "@/assets/dashboardBike.png";
 import { title } from "process";
 
 // [GANTI BAGIAN INI] — Update links, university, certifications, etc.
@@ -131,35 +133,47 @@ export const projects = [
   },
   {
     image: guava,
-    title: "Guava Fruit Disease Classification",
+    title: "Guava Fruit Disease Classification Dashboard",
     description:
-      "Proyek klasifikasi penyakit buah jambu biji menggunakan citra digital dan pendekatan transfer learning untuk membedakan buah sehat dan buah yang mengalami penyakit (Anthracnose, Fruit Fly, Healthy).",
-    role: "Machine Learning",
+      "Dashboard berbasis Streamlit untuk mendeteksi penyakit buah jambu biji menggunakan model MobileNetV2 dengan pendekatan transfer learning. Dilengkapi visualisasi Grad-CAM, informasi penyakit, dan evaluasi performa model untuk mendukung interpretasi hasil prediksi.",
+    role: "Machine Learning & AI Engineer",
     tech: [
       "Python",
       "TensorFlow",
-      "Google Colab",
       "MobileNetV2",
-      "Matplotlib",
-      "Keras",
+      "Streamlit",
+      "Grad-CAM",
       "Kaggle",
       "Scikit-learn",
+      "OpenCV",
     ],
     links: [
-      { label: "GitHub Repository", href: "#" }, // [GANTI BAGIAN INI]
-      { label: "Read Documentation", href: "#" }, // [GANTI BAGIAN INI]
+      { label: "Deploy Dashboard", href: "https://guava-disease-detector.streamlit.app/" },
+      { label: "GitHub Repository", href: "https://github.com/putribila/guava-disease-detection" },
     ],
   },
   {
-    image: dashboard,
-    title: "Interactive Nutrition Data Dashboard",
+    image: dashboardBike,
+    title: "Bike Sharing Interactive Dashboard",
     description:
-      "Dashboard interaktif untuk mengeksplorasi data makanan dan kandungan nutrisi — energi, protein, lemak, karbohidrat, serat, kalsium, serta skor keseimbangan gizi dari berbagai menu.",
+      "Dashboard interaktif berbasis web menggunakan Streamlit untuk menganalisis dan memvisualisasikan data penyewaan sepeda berdasarkan data untuk mengeksplorasi pengaruh faktor musim, waktu, dan hari terhadap tren penyewaan sepeda",
     role: "Data Analysis",
-    tech: ["Python", "Pandas", "Streamlit", "Matplotlib", "Data Analysis"],
+    tech: ["Python", "Pandas", "Streamlit", "Matplotlib", "Google Colab"],
     links: [
-      { label: "View Dashboard", href: "#" }, // [GANTI BAGIAN INI]
-      { label: "GitHub Repository", href: "#" }, // [GANTI BAGIAN INI]
+      { label: "View Dashboard", href: "https://bike-sharing-dashboard-interaktif.streamlit.app/" },
+      { label: "GitHub Repository", href: "https://github.com/putribila/Bike-Sharing-Dashboard" },
+    ],
+  },
+  {
+    image: analisisSentimen,
+    title: "Analisis Sentimen Ulasan Aplikasi Shopee",
+    description:
+      "Analisis sentimen pengguna terhadap aplikasi Shopee berdasarkan ulasan yang diperoleh dari Google Play Store. Analisis sentimen dilakukan untuk mengklasifikasikan ulasan ke dalam kategori sentimen tertentu sehingga dapat memberikan gambaran mengenai tingkat kepuasan pengguna terhadap aplikasi. dengan menggunakan algoritma machine learning Support Vector Machine (SVM), Random Forest dan LSTM",
+    role: "Machine Learning",
+    tech: ["Python", "Pandas", "Sastrawi", "Matplotlib", "Wordcloud", "Google Colab", "Tensorflow", "Scikit-learn"],
+    links: [
+      { label: "Model", href: "https://github.com/putribila/Analisis-Sentimen-Shopee/tree/main/Model" },
+      { label: "GitHub Repository", href: "https://github.com/putribila/Analisis-sentimen" },
     ],
   },
 ];

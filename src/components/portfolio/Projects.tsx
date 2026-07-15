@@ -29,7 +29,7 @@ export function Projects() {
                   {p.description}
                 </p>
                 <div className="mt-4 flex flex-wrap gap-1.5">
-                  {p.tech.slice(0, 5).map((t) => (
+                  {p.tech.map((t) => (
                     <span
                       key={t}
                       className="rounded-md bg-secondary px-2 py-0.5 text-xs font-medium text-secondary-foreground"
@@ -37,11 +37,6 @@ export function Projects() {
                       {t}
                     </span>
                   ))}
-                  {p.tech.length > 5 && (
-                    <span className="rounded-md bg-secondary px-2 py-0.5 text-xs font-medium text-muted-foreground">
-                      +{p.tech.length - 5}
-                    </span>
-                  )}
                 </div>
                 <div className="mt-5 flex flex-wrap gap-3 border-t border-border pt-4">
                   {p.links.map((l) => (
