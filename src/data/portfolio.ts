@@ -251,6 +251,12 @@ export const education = [
 
 export const certifications = [
   {
+    name: "AI Engineer Cohort",
+    issuer: "Coding Camp powered by DBS Foundation",
+    year: "Februari - Juni 2026",
+    href: "https://drive.google.com/file/d/1mKL0UMcxALtSk3i30Hml6Rkz8SFKSWIV/view?usp=sharing",
+  },
+  {
     name: "MSIB Machine Learning Cohort",
     issuer: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
     year: "September 2024 - Januari 2025",
