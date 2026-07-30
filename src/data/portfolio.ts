@@ -18,7 +18,7 @@ export const profile = {
   email: "putrinabilaaa7@gmail.com",
   github: "https://github.com/putribila",
   linkedin: "https://www.linkedin.com/in/putri-nabilla-77a670223", // [GANTI BAGIAN INI]
-  cv: "https://drive.google.com/file/d/1BO-dvcW6z2pxgKOqESQbu0PdaRXetber/view?usp=sharing", // [GANTI BAGIAN INI] link CV
+  cv: "https://drive.google.com/file/d/1eIaZoPWkrupZtKAWGunKS4h7lea5_P6I/view?usp=sharing", // [GANTI BAGIAN INI] link CV
   location: "Indonesia",
 };
 
@@ -326,6 +326,12 @@ export const certifications = [
     issuer: "Kementerian Komunikasi dan Informatika Republik Indonesia",
     year: "Juni-Juli 2023",
     href: "https://drive.google.com/file/d/1us1KoAUc0N9Q5eGif7_bPHUPCMQf6Hof/view?usp=sharing",
+  },
+  {
+    name: "Data Engineering Professional Certification",
+    issuer: "ALTAIR Company RapidMiner",
+    year: "April 2023",
+    href: "https://drive.google.com/file/d/1vPrknKky2bi8fqfUSVl0O9drKdJxdwnb/view?usp=sharing",
   },
   {
     name: "Data Management Staff",
