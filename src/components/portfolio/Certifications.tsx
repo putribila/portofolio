@@ -15,6 +15,11 @@ export function Certifications() {
               </div>
               <h3 className="mt-4 text-base font-bold">{c.name}</h3>
               <p className="mt-1 text-sm text-muted-foreground">{c.issuer}</p>
+              {c.credentialID && (
+                <p className="text-sm text-muted-foreground">
+                  Credential ID: {c.credentialID}
+                </p>
+              )}
               <p className="text-sm text-muted-foreground">{c.year}</p>
               <a
                 href={c.href}

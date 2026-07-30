@@ -4,6 +4,11 @@ import analisisSentimen from "@/assets/analisisSentimen.png";
 import dashboard from "@/assets/project-dashboard.jpg";
 import dashboardZara from "@/assets/dashboard-zara.jpg";
 import dashboardBike from "@/assets/dashboardBike.png";
+import logoDigitalent from "@/assets/logo_digitalent.png";
+import logoKarirNex from "@/assets/karirnex.jpg";
+import logoBangkit from "@/assets/logo_bangkit.jpg";
+import logoSmkDev from "@/assets/logo_smkdev.jpg";
+import logoCodingCamp from "@/assets/logo_codingcamp.jpg";
 import { title } from "process";
 
 // [GANTI BAGIAN INI] — Update links, university, certifications, etc.
@@ -180,58 +185,99 @@ export const projects = [
 
 export const experiences = [
   {
-    title: "AI Engineer Cohort - Coding Camp powered by DBS Foundation",
-    year: "Februari 2026 - Present",
-    description: [
-      "Membuat proyek untuk membangun model machine learning menggunakan beberapa metode supervised dan unsupervised learning pada kasus nyata dengan penerapan EDA, pra-pemrosesan data, clustering.",
-      "Pembuatan proyek model deep learning yang dapat melakukan klasifikasi gambar dan analisis sentiment dengan data hasil scraping mandiri.",
-      "Membuat proyek time series multivariate multi-step menggunakan model dan training yang dikustomisasi.",
-      "Mengembangkan keterampilan profesional meliputi critical thinking, problem solving, project management, time management, adaptability, resilience, professional branding, serta komunikasi wawancara",
-      "Membuat proyek akhir tim berupa solusi berbasis artificial intelligence seputar rekomendasi menu makanan dengan gizi seimbang."
-    ],
+    company: "Coding Camp 2026 Powered by DBS Foundation",
+    logoLetter: logoCodingCamp,
+    logoColor: "bg-orange-500 text-white",
+    items: [
+      {
+        title: "AI Engineer Cohort",
+        location: "Online",
+        year: "Februari - Juni 2026",
+        description: [
+          "Membuat proyek untuk membangun model machine learning menggunakan beberapa metode supervised dan unsupervised learning pada kasus nyata dengan penerapan EDA, pra-pemrosesan data, clustering.",
+          "Pembuatan proyek model deep learning yang dapat melakukan klasifikasi gambar dan analisis sentiment dengan data hasil scraping mandiri.",
+          "Membuat proyek time series multivariate multi-step menggunakan model dan training yang dikustomisasi.",
+          "Mengembangkan keterampilan profesional meliputi critical thinking, problem solving, project management, time management, adaptability, resilience, professional branding, serta komunikasi wawancara.",
+          "Membuat proyek akhir tim berupa solusi berbasis artificial intelligence seputar rekomendasi menu makanan dengan gizi seimbang."
+        ]
+      }
+    ]
   },
   {
-    title: "Machine Learning Cohort - MSIB Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
-    year: "September 2024 - Januari 2025",
-    description: [
-      "Melaksanakan alur pengembangan proyek Machine Learning secara end-to-end, mulai dari analisis data, pengembangan model, evaluasi, hingga deployment model berbasis web.",
-      "Mengolah dan menganalisis data untuk menghasilkan insight yang mendukung penyelesaian permasalahan bisnis dengan membuat dashboard streamlit.",
-      "Mengembangkan keterampilan profesional meliputi critical thinking, problem solving, project management, time management, adaptability, resilience, professional branding, serta komunikasi wawancara.",
-      "Mengembangkan proyek akhir berupa solusi berbasis Machine Learning yaitu deteksi sampah."
-    ],
+    company: "MSIB Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
+    logoLetter: logoBangkit,
+    logoColor: "bg-blue-600 text-white",
+    items: [
+      {
+        title: "Machine Learning Cohort",
+        location: "Online",
+        year: "September 2024 - Januari 2025",
+        description: [
+          "Melaksanakan alur pengembangan proyek Machine Learning secara end-to-end, mulai dari analisis data, pengembangan model, evaluasi, hingga deployment model berbasis web.",
+          "Mengolah dan menganalisis data untuk menghasilkan insight yang mendukung penyelesaian permasalahan bisnis dengan membuat dashboard streamlit.",
+          "Mengembangkan keterampilan profesional meliputi critical thinking, problem solving, project management, time management, adaptability, resilience, professional branding, serta komunikasi wawancara.",
+          "Mengembangkan proyek akhir berupa solusi berbasis Machine Learning yaitu deteksi sampah."
+        ]
+      }
+    ]
   },
   {
-    title: "Data Analyst - SMKDEV Bootcamp Scholarship",
-    year: "5 Februari - 9 Maret 2024",
-    description: [
-      "Mempelajari dan mempraktikkan konsep statistika, analisis data dasar, serta pengolahan data menggunakan spreadsheet.",
-      "Mengerjakan proyek analisis data berbasis studi kasus dengan menerapkan manipulasi data, visualisasi data, dan EDA menggunakan Python.",
-      "Membuat capstone project berupa dashboard interaktif menggunakan Google Data Studio untuk menyajikan insight secara lebih informatif."
-    ],
+    company: "SMKDEV Bootcamp Scholarship",
+    logoLetter: logoSmkDev,
+    logoColor: "bg-green-600 text-white",
+    items: [
+      {
+        title: "Data Analyst",
+        location: "Online",
+        year: "5 Februari - 9 Maret 2024",
+        description: [
+          "Mempelajari dan mempraktikkan konsep statistika, analisis data dasar, serta pengolahan data menggunakan spreadsheet.",
+          "Mengerjakan proyek analisis data berbasis studi kasus dengan menerapkan manipulasi data, visualisasi data, dan EDA menggunakan Python.",
+          "Membuat capstone project berupa dashboard interaktif menggunakan Google Data Studio untuk menyajikan insight secara lebih informatif."
+        ]
+      }
+    ]
   },
   {
-    title: "Bootcamp Microsoft Excel - KarirNex ",
-    year: "27 November - 8 Desember 2023",
-    description: [
-      "Mempelajari dan mempraktikkan pengelolaan data menggunakan spreadsheet, mulai dari mengatur worksheets, workbooks, data cells, ranges, tabel, table data, hingga chart.",
-      "Mengoperasikan berbagai formula dan fungsi seperti AVERAGE, MAX, SUM, COUNT, COUNTA, COUNTBLANK, IF, dan fungsi lainnya untuk membantu proses analisis serta pengolahan data secara lebih efisien."
-    ],
+    company: "KarirNex",
+    logoLetter: logoKarirNex,
+    logoColor: "bg-purple-600 text-white",
+    items: [
+      {
+        title: "Bootcamp Microsoft Excel",
+        location: "Online",
+        year: "27 November - 8 Desember 2023",
+        description: [
+          "Mempelajari dan mempraktikkan pengelolaan data menggunakan spreadsheet, mulai dari mengatur worksheets, workbooks, data cells, ranges, tabel, table data, hingga chart.",
+          "Mengoperasikan berbagai formula dan fungsi seperti AVERAGE, MAX, SUM, COUNT, COUNTA, COUNTBLANK, IF, dan fungsi lainnya untuk membantu proses analisis serta pengolahan data secara lebih efisien."
+        ]
+      }
+    ]
   },
   {
-    title: "Junior Web Developer Training and Certification - VSGA Digital Talent Scholarship Kominfo",
-    year: "13 Juni - 28 Juli 2023",
-    description: [
-      "Mempelajari dan mengimplementasikan User Interface serta konsep pemrograman terstruktur dalam pengembangan aplikasi berbasis web.",
-      "Menerapkan perintah eksekusi bahasa pemrograman berbasis teks, grafik, dan multimedia dengan penyusunan fungsi, file, library, serta komponen secara rapi dan terorganisir.",
-      "Membuat website berita yang menerapkan konsep antarmuka, struktur kode, dan pengelolaan sumber daya pemrograman sebagai proyek akhir."
-    ],
-  },
-  {
-    title: "Data Management Staff Training and Certification - VSGA Digital Talent Scholarship Kominfo",
-    year: "20 - 24 Juni 2022",
-    description: [
-      "Melakukan pemasukan data serta memahami aspek keamanan informasi pengguna dalam penggunaan teknologi.",
-      "Mengoperasikan perangkat komputer, sistem operasi, peripheral, surat elektronik (e-mail client), pengolah kata tingkat lanjut, dan perangkat lunak lembar kerja tingkat lanjut untuk mendukung pekerjaan administrasi dan pengolahan data."
+    company: "VSGA Digital Talent Scholarship Kominfo",
+    logoLetter: logoDigitalent,
+    logoColor: "bg-blue-500 text-white",
+    items: [
+      {
+        title: "Junior Web Developer Training and Certification",
+        location: "Online",
+        year: "13 Juni - 28 Juli 2023",
+        description: [
+          "Mempelajari dan mengimplementasikan User Interface serta konsep pemrograman terstruktur dalam pengembangan aplikasi berbasis web.",
+          "Menerapkan perintah eksekusi bahasa pemrograman berbasis teks, grafik, dan multimedia dengan penyusunan fungsi, file, library, serta komponen secara rapi dan terorganisir.",
+          "Membuat website berita yang menerapkan konsep antarmuka, struktur kode, dan pengelolaan sumber daya pemrograman sebagai proyek akhir."
+        ]
+      },
+      {
+        title: "Data Management Staff Training and Certification",
+        location: "Kota Cirebon, West Java, Indonesia - On-site",
+        year: "20 - 24 Juni 2022",
+        description: [
+          "Melakukan pemasukan data serta memahami aspek keamanan informasi pengguna dalam penggunaan teknologi.",
+          "Mengoperasikan perangkat komputer, sistem operasi, peripheral, surat elektronik (e-mail client), pengolah kata tingkat lanjut, dan perangkat lunak lembar kerja tingkat lanjut untuk mendukung pekerjaan administrasi dan pengolahan data."
+        ]
+      }
     ]
   }
 ];
@@ -271,12 +317,20 @@ export const certifications = [
   {
     name: "Programming and Software Development",
     issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
+    credentialID: "62019 2513 25279 2023",
     year: "Oktober 2023",
     href: "https://drive.google.com/file/d/1mvG6aWsM9PA3jKjpL6XrnPjbJuzWjDri/view?usp=drive_link",
   },
   {
+    name: "Junior Web Developer",
+    issuer: "Kementerian Komunikasi dan Informatika Republik Indonesia",
+    year: "Juni-Juli 2023",
+    href: "https://drive.google.com/file/d/1us1KoAUc0N9Q5eGif7_bPHUPCMQf6Hof/view?usp=sharing",
+  },
+  {
     name: "Data Management Staff",
     issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
+    credentialID: "63111 351130029018 2022",
     year: "Juni 2022",
     href: "https://drive.google.com/file/d/1q6tx5lI1Q-nBcH_occ4V-t47Vnu6d1io/view?usp=drive_link",
   },

@@ -19,6 +19,17 @@ export function Skills() {
       ),
     },
     {
+      name: "Google Data Studio",
+      color: "#4285F4",
+      icon: (
+        <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+          <rect x="3" y="12" width="4" height="10" rx="1.5" />
+          <rect x="10" y="7" width="4" height="15" rx="1.5" />
+          <rect x="17" y="2" width="4" height="20" rx="1.5" />
+        </svg>
+      ),
+    },
+    {
       name: "GitHub",
       color: "#181717",
       icon: (
