@@ -327,12 +327,12 @@ export const certifications = [
     year: "Juni-Juli 2023",
     href: "https://drive.google.com/file/d/1us1KoAUc0N9Q5eGif7_bPHUPCMQf6Hof/view?usp=sharing",
   },
-  {
+  /*{
     name: "Data Engineering Professional Certification",
     issuer: "ALTAIR Company RapidMiner",
     year: "April 2023",
     href: "https://drive.google.com/file/d/1vPrknKky2bi8fqfUSVl0O9drKdJxdwnb/view?usp=sharing",
-  },
+  },*/
   {
     name: "Data Management Staff",
     issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
